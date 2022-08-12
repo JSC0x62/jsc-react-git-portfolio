@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 //imports required
+
 const ProfileWrapper = styled.div`
   width: 50%;
   margin: 10px auto;
@@ -24,7 +25,7 @@ class Profile extends Component {
   async componentDidMount() {
     try {
      //url at end of username
-      const profile = await fetch('https://api.github.com/users/');
+      const profile = await fetch('https://api.github.com/users/JSC0x62');
       const profileJSON = await profile.json();
 
       if (profileJSON) {
